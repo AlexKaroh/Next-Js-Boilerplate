@@ -1,0 +1,8 @@
+[bugtraq]
+	url = https://support.softclub.by/browse/%BUGID%
+	message = JIRA: %BUGID%
+	label = Код запроса JIRA
+	append = true
+	number = false
+	warnifnoissue = true
+	logregex = "^JIRA\\: ([A-Z]+\\-\\d+(?:;[A-Z]+\\-\\d+)*)$\n([A-Z]+\\-\\d+)"
