@@ -1,4 +1,11 @@
-Architech Next Js Boilerplate Project
+PD Next Js Boilerplate Project
+
+Extensions:
+biome
+Code Spell Checker
+EditorConfig for VS Code
+Git Graph
+Git History
 
 Install:
 yarn install

@@ -1,0 +1,30 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+:root {
+  --toastify-color-progress-dark: var(--yellow) !important;
+  --toastify-text-color-light: var(--black) !important;
+  --toastify-color-light: var(--white) !important;
+  --toastify-color-progress-light: var(--yellow) !important;
+
+  /* scroll */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: $font-size-base;
+  background-color: $background-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

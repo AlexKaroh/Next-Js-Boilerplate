@@ -1,19 +1,20 @@
-import { FC, ReactElement } from 'react';
-import Box from '@mui/material/Box';
+import type { FC, ReactElement } from "react";
 
-import Footer from 'components/Footer/Footer';
-import Header from 'components/Header/Header';
+import Footer from "components/Footer/Footer";
+import Header from "components/Header/Header";
 
-import styles from './styles';
+import styles from "./styles.module.scss";
 
 const Layout: FC<{ children: ReactElement }> = ({ children }) => {
-  return (
-    <Box sx={styles.container}>
-      <Header />
-      <Box sx={styles.content}>{children}</Box>
-      <Footer />
-    </Box>
-  );
+	return (
+		<div className={styles.wrapper}>
+			<div className={styles.container}>
+				<Header />
+				<div className={styles.content}>{children}</div>
+				<Footer />
+			</div>
+		</div>
+	);
 };
 
 export default Layout;

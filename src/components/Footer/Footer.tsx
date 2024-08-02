@@ -1,8 +1,7 @@
-import { FC } from 'react';
-import Box from '@mui/material/Box';
+import type { FC } from "react";
 
 const Footer: FC = () => {
-  return <Box p={2}>Footer</Box>;
+	return <div>Footer</div>;
 };
 
 export default Footer;

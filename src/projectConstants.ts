@@ -1,7 +1,7 @@
 const constants = {
-  messages: {
-    error: 'Something went wrong'
-  }
+	messages: {
+		error: "Something went wrong",
+	},
 };
 
 export default constants;

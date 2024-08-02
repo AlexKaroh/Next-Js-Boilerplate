@@ -1,18 +1,13 @@
-import { createContext, Dispatch, SetStateAction } from 'react';
-import { TThemeModes } from 'hooks/useThemeColor/useThemeColor';
+import { type Dispatch, type SetStateAction, createContext } from "react";
 
 type TAppContext = {
-  token: string;
-  setToken: Dispatch<SetStateAction<string>>;
-  themeColor: TThemeModes;
-  setThemeColor: Dispatch<SetStateAction<TThemeModes>>;
+	token: string;
+	setToken: Dispatch<SetStateAction<string>>;
 };
 
 export const initContext: TAppContext = {
-  token: '',
-  setToken: () => null,
-  themeColor: TThemeModes.Light,
-  setThemeColor: () => null
+	token: "",
+	setToken: () => null,
 };
 
 const AppContext = createContext<TAppContext>(initContext);

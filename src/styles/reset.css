@@ -1,0 +1,187 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default styles for lists */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  background-color: #fff;
+  color: #000;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: inherit; /* Ensure links do not inherit color, can be adjusted as needed */
+  text-decoration: none; /* Remove default underline, can be adjusted as needed */
+}
+
+/* Remove default styles for tables */
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* Set display properties for common elements */
+main {
+  display: block;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/* HTML5 display-role reset for older browsers */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* Remove default fieldset border and padding */
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select,
+optgroup {
+  font: inherit;
+  margin: 0; /* Remove the margin in Safari */
+}
+
+/* Remove defaults for form elements */
+button,
+input,
+optgroup,
+select,
+textarea {
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+/* Remove outlines from buttons and inputs */
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+
+/* Remove outlines from inputs and textareas */
+textarea {
+  resize: vertical; /* Allow only vertical resize */
+}
+
+/* Remove default appearance for progress element */
+progress {
+  vertical-align: baseline;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Make embedded content more accessible */
+iframe {
+  border: 0;
+}
+
+/* Remove built-in form padding and border */
+input::placeholder,
+textarea::placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
+
+/* Remove border on select elements */
+select {
+  text-transform: none;
+}

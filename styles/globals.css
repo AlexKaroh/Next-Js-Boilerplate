@@ -1,9 +1,0 @@
-:root {
-  --toastify-color-progress-dark: var(--yellow) !important;
-  --toastify-text-color-light: var(--black) !important;
-  --toastify-color-light: var(--white) !important;
-  --toastify-color-progress-light: var(--yellow) !important;
-
-  /* scroll */
-  scroll-behavior: smooth;
-}

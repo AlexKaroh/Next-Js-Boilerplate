@@ -1,0 +1,15 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin transition($property, $duration: 0.3s, $ease: ease-in-out) {
+  transition: $property $duration $ease;
+}
+
+@mixin centered-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}

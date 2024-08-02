@@ -1,21 +1,20 @@
-import { FC } from 'react';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import { useTranslation } from 'next-i18next';
+import type { FC } from "react";
 
-import styles from './styles';
+import { useTranslation } from "next-i18next";
+
+import styles from "./styles.module.scss";
 
 const Index: FC = () => {
-  const { t } = useTranslation('common');
+	const { t } = useTranslation("common");
 
-  return (
-    <Box sx={styles.container}>
-      <Box sx={styles.block}>
-        <Typography variant="h2">{t('title')}</Typography>
-        <Typography variant="body2">{t('description')}</Typography>
-      </Box>
-    </Box>
-  );
+	return (
+		<div className={styles.container}>
+			<div className={styles.block}>
+				<h2>{t("title")}</h2>
+				<p>{t("description")}</p>
+			</div>
+		</div>
+	);
 };
 
 export default Index;
