@@ -1,12 +1,12 @@
+import { ApolloProvider } from "@apollo/client";
 import { useMemo, useState } from "react";
 import { ToastContainer } from "react-toastify";
-import { ApolloProvider } from "@apollo/client";
 
 import AppContext from "appContext";
 
+import { appWithTranslation } from "next-i18next";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import { appWithTranslation } from "next-i18next";
 import { inter } from "resources/fonts/fonts";
 
 import Layout from "components/Layout/Layout";

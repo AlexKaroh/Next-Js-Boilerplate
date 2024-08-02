@@ -6,12 +6,12 @@ import { useRouter } from "next/router";
 
 import Routes from "routes";
 
+import { toast } from "react-toastify";
 import styles from "./styles.module.scss";
 
 const Header: FC = () => {
 	const router = useRouter();
 	const { t } = useTranslation("header");
-	console.log(styles);
 	return (
 		<div className={styles.container}>
 			<div>
@@ -21,7 +21,7 @@ const Header: FC = () => {
 				<Link href={Routes.HOME}>{t("Home")}</Link>
 				<Link href={Routes.ABOUT}>{t("About")}</Link>
 			</div>
-			<div>
+			<div className={styles.lang}>
 				<button type="button" onClick={() => handleSwitchLanguage("en")}>
 					EN
 				</button>
@@ -33,6 +33,7 @@ const Header: FC = () => {
 	);
 
 	async function handleSwitchLanguage(lang: string) {
+		toast.success(`Switching language to ${lang}`);
 		await router.push(router.asPath, undefined, { locale: lang });
 	}
 };

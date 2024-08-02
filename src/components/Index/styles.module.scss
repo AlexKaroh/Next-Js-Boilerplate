@@ -1,3 +1,5 @@
+@import 'styles/mixins';
+
 .container {
   display: flex;
   align-items: center;
@@ -6,6 +8,7 @@
 }
 
 .block {
+  @include centered-container;
   display: flex;
   flex-direction: column;
   padding: 5px;

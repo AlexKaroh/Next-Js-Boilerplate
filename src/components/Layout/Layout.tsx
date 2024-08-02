@@ -8,11 +8,9 @@ import styles from "./styles.module.scss";
 const Layout: FC<{ children: ReactElement }> = ({ children }) => {
 	return (
 		<div className={styles.wrapper}>
-			<div className={styles.container}>
-				<Header />
-				<div className={styles.content}>{children}</div>
-				<Footer />
-			</div>
+			<Header />
+			<div className={styles.content}>{children}</div>
+			<Footer />
 		</div>
 	);
 };

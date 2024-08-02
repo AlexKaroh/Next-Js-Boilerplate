@@ -1,6 +1,6 @@
-import type { FC } from "react";
 import type { GetStaticProps } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import type { FC } from "react";
 
 const IndexPage: FC = () => {
 	return <></>;
