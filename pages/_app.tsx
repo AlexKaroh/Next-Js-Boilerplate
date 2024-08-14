@@ -2,16 +2,16 @@ import { ApolloProvider } from "@apollo/client";
 import { useMemo, useState } from "react";
 import { ToastContainer } from "react-toastify";
 
-import AppContext from "appContext";
+import AppContext from "services/appContext";
 
 import { appWithTranslation } from "next-i18next";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { inter } from "resources/fonts/fonts";
 
-import Layout from "components/Layout/Layout";
+import Layout from "common/layout/Layout/Layout";
 
-import { useApollo } from "../src/apolloClient";
+import { useApollo } from "services/apolloClient";
 
 import "styles/global.scss";
 import "styles/scrollbar.css";
@@ -49,7 +49,6 @@ function MyApp({ Component, pageProps }: AppProps) {
 						<Layout>
 							<Component {...pageProps} />
 						</Layout>
-
 						<ToastContainer position="bottom-left" theme="dark" />
 					</AppContext.Provider>
 				</ApolloProvider>

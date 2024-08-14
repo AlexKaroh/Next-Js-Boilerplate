@@ -1,9 +1,8 @@
 import type { FC, ReactElement } from "react";
 
-import Footer from "components/Footer/Footer";
-import Header from "components/Header/Header";
-
 import styles from "./styles.module.scss";
+import Header from 'common/layout/Header/Header';
+import Footer from 'common/layout/Footer/Footer';
 
 const Layout: FC<{ children: ReactElement }> = ({ children }) => {
 	return (

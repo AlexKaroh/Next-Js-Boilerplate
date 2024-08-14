@@ -3,7 +3,7 @@ import type { GetStaticProps } from "next";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-import Index from "components/Index/Index";
+import Index from "pages/Index/Index";
 const IndexPage: FC = () => {
 	return <Index />;
 };

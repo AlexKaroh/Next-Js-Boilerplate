@@ -4,7 +4,7 @@ import { useTranslation } from "next-i18next";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-import Routes from "routes";
+import Routes from "constants/routes";
 
 import { toast } from "react-toastify";
 import styles from "./styles.module.scss";
